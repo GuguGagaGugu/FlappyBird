@@ -30,4 +30,12 @@ public class PipeMoveScript : MonoBehaviour
        
     }
 
+    void AddSpeed(float count = 1)
+    {
+        if (count < 0.1) {
+            count = 1;
+        }
+    
+        this.movespeed += count;
+    }
 }
